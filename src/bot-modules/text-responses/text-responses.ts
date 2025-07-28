@@ -512,7 +512,6 @@ export class TextResponses {
 
   private setWTFResponses(): void {
     this.GBot.onText(/\/wtf/i, (msg: TelegramBot.Message, match: any): void => {
-      this.GBot.sendMessage(msg.chat.id, 'HELLO')
       this.GBot.sendDocument(
         msg.chat.id,
         __dirname + "/../../../assets/wtf/wtf" + ".gif"
