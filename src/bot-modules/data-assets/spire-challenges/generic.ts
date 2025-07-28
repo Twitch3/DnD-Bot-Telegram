@@ -1,3 +1,4 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
 export class GenericChallenges {
     public static challenges: string[] = [
         "SO ... COLORFUL - YOU MUST TAKE PRISMATIC SHARD IF IT APPEARS",

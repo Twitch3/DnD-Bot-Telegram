@@ -4,6 +4,7 @@ import { Defect } from "./spire-challenges/defect";
 import { Watcher } from "./spire-challenges/watcher";
 import { GenericChallenges } from "./spire-challenges/generic";
 import { CustomChallenges } from "./spire-challenges/custom";
+import { SpireCharacterList, GenericSpireChallenge } from '../models/spire.models'
 
 export class SpireChallenges {
     public static characters: SpireCharacterList = {

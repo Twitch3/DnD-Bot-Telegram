@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "./output",
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "target": "es2024",
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
   },
   "inclue": [
     "./src/*"

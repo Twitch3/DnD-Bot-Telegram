@@ -7,7 +7,7 @@ import { GenerateCommands } from './bot-modules/commands/generate';
 import { HelpCommands } from './bot-modules/commands/help';
 import { MTGSearch } from './bot-modules/commands/mtg-search';
 import { SpireCommands } from './bot-modules/commands/spire';
-import TelegramBot = require('node-telegram-bot-api');
+import TelegramBot from 'node-telegram-bot-api';
 import { RoRCommands } from './bot-modules/commands/ror';
 
 let bot;

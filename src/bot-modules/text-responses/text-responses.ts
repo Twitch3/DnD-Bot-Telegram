@@ -2,7 +2,7 @@ import { Canvas, Image } from "canvas";
 import { GygaxResponses } from "./gygax-responses";
 import { LonkGenerator } from "../utility/lonk-generator";
 import { GlobalHelpers } from "../utility/global-helpers";
-import TelegramBot = require("node-telegram-bot-api");
+import * as TelegramBot from 'node-telegram-bot-api';
 import { ManhattanGenerator } from "../utility/manhattan-generator";
 import { YoutubeParser } from "../utility/youtube-parser";
 
@@ -512,6 +512,7 @@ export class TextResponses {
 
   private setWTFResponses(): void {
     this.GBot.onText(/\/wtf/i, (msg: TelegramBot.Message, match: any): void => {
+      this.GBot.sendMessage(msg.chat.id, 'HELLO')
       this.GBot.sendDocument(
         msg.chat.id,
         __dirname + "/../../../assets/wtf/wtf" + ".gif"

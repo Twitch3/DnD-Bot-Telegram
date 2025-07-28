@@ -1,22 +1,22 @@
 
-interface SpireCharacterList {
+export interface SpireCharacterList {
     ironclad: SpireCharacter,
     silent: SpireCharacter,
     defect: SpireCharacter,
     watcher: SpireCharacter
 }
 
-interface GenericSpireChallenge {
+export interface GenericSpireChallenge {
     challenges: string[],
     uniqueChallenges: SpireUniqueChallenge[]
 }
 
-interface SpireCharacter extends GenericSpireChallenge {
+export interface SpireCharacter extends GenericSpireChallenge {
     intro: string,
     imageName: string
 }
 
-interface SpireUniqueChallenge {
+export interface SpireUniqueChallenge {
     challengeName: string,
     challenges: string[]
 }

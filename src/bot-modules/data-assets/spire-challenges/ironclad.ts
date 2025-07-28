@@ -1,3 +1,4 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
 export class Ironclad {
     public static intro: string = "IT'S TIME FOR THE YEET KING HIMSELF. \n LET'S GET REDY TO FLEX OUR WAY TO FREEDOM. \n I R O N C L A D";
     public static imageName: string = "ironclad.jpg";

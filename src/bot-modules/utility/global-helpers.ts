@@ -11,6 +11,6 @@ export class GlobalHelpers {
 
     public static deleteCommandMessage(bot: TelegramBot, msg: TelegramBot.Message) {
         // If bot isn't an Admin in the chat, the deleteMessage will error out.
-        bot.deleteMessage(msg.chat.id, msg.message_id.toString());
+        bot.deleteMessage(msg.chat.id, msg.message_id);
     }
 }

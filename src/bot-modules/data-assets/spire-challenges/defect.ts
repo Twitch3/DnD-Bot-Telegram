@@ -1,3 +1,5 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
+
 export class Defect {
     public static intro: string = "WE'RE GONNA CLAW OUR WAY TO VICTORY WITH THIS ONE, BOYS. \n DEFRAG YOUR BRAINS AND WISH UPON A STAR FOR CALIPERS. \n D E F E C T";
     public static imageName: string = "defect.jpg";

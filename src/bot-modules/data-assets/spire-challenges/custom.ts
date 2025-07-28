@@ -1,3 +1,4 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
 export class CustomChallenges {
     public static easyIndexes: number[] = []; // TODO - Populate and use
     public static hardCombos: number[] = []; // TODO - Populate and use

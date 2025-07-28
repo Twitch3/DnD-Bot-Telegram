@@ -1,3 +1,4 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
 export class Watcher {
     public static intro: string = "HOW THE FUCK DOES THIS CHARACTER WORK AGAIN? \n WHO CARES, JUST PROSTRATE YOUR WAY TO VICTORY. \n W A T C H E R";
     public static imageName: string = "watcher.jpg";

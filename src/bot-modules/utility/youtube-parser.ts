@@ -1,5 +1,5 @@
-import { GaxiosResponse } from 'gaxios';
-import { google, youtube_v3 } from 'googleapis';
+import { google, youtube_v3, } from 'googleapis';
+import { GaxiosResponseWithHTTP2 } from 'googleapis-common';
 export class YoutubeParser {
 
     public static async getLatestYoutubeVideo(channelUrl: string): Promise<any> {
@@ -9,7 +9,7 @@ export class YoutubeParser {
                 playlistId: 'UUD6VugMZKRhSyzWEWA9W2fg',
                 key: process.env.YT_API_KEY
             }
-        ).then((latestVids: GaxiosResponse<youtube_v3.Schema$PlaylistItemListResponse>) => {
+        ).then((latestVids: GaxiosResponseWithHTTP2<youtube_v3.Schema$PlaylistItemListResponse>) => {
             return latestVids.data.items[0].contentDetails.videoId;
         }, (err) => {
             return err;

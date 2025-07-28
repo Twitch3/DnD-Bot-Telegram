@@ -1,3 +1,4 @@
+import { SpireUniqueChallenge } from "../../models/spire.models";
 export class Silent {
     public static intro: string = "HUSH YOUR MOUTH IT'S TIME TO POISON SOME FOOLS. \n LEAVE THE SHIVS BEHIND AND BECOME A SPOOKY GHOST. \n S I L E N T";
     public static imageName: string = "silent.jpg";
