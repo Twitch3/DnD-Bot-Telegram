@@ -82,6 +82,7 @@ export class TextResponses {
     this.setEthanResponses();
     this.setNoYaNotResponse();
     this.setSentienceResponse();
+    this.setZakoshiResponse();
   }
 
   private loadCanvasImage(url: string): Promise<Image> {
@@ -609,5 +610,15 @@ export class TextResponses {
         }
       }
     );
+  }
+
+  private setZakoshiResponse(): void {
+    this.GBot.onText(/gal|dino/i, (msg: TelegramBot.Message, match: any): void => {
+      const stonk: number = Math.floor(Math.random() * 4) + 1;
+      this.GBot.sendDocument(
+        msg.chat.id,
+        __dirname + "/../../../assets/zakoshi/zakoshi" + stonk + ".mp4"
+      );
+    });
   }
 }
